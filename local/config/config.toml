@@ -283,6 +283,7 @@ dial_timeout = "3s"
 #   1) "v0" - (default) FIFO mempool.
 #   2) "v1" - prioritized mempool.
 version = "v1" 
+
 recheck = true
 broadcast = true
 wal_dir = ""
