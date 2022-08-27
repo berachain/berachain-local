@@ -230,10 +230,10 @@ max-tx-gas-wanted = 0
 enable = true
 
 # Address defines the EVM RPC HTTP server address to bind to.
-address = "0.0.0.0:26651"
+address = "0.0.0.0:8545"
 
 # Address defines the EVM WebSocket server address to bind to.
-ws-address = "0.0.0.0:26652"
+ws-address = "0.0.0.0:8546"
 
 # API defines a list of JSON-RPC namespaces that should be enabled
 # Example: "eth,txpool,personal,net,debug,web3"
@@ -275,7 +275,7 @@ allow-unprotected-txs = false
 max-open-connections = 0
 
 # EnableIndexer enables the custom transaction indexer for the EVM (ethereum transactions).
-enable-indexer = false
+enable-indexer = true
 
 ###############################################################################
 ###                             TLS Configuration                           ###
