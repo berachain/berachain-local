@@ -19,7 +19,7 @@ Local Berachain has the following advantages over a public testnet:
 - [`Docker`](https://www.docker.com/)
 - [`docker-compose`](https://github.com/docker/compose)
 - [`berad`](https://berachain.com)
-- Supported known architecture: x86_64
+- Supported known architecture: x86_64, arm64
 - 16+ GB of RAM is recommended
 
 ## Install Local Berachain
