@@ -20,7 +20,7 @@ services:
       - "8546:8546"
 
   # The Oracle Feeder Process
-  oracle-feeder:
+  oracle:
     depends_on:
       - node
     env_file:

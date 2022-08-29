@@ -32,6 +32,7 @@ mytestnet
 local/data/*.db
 local/data/*.wal
 local/data/snapshots/
+local/config/addrbook.json 
 
 # Testing
 coverage.txt
