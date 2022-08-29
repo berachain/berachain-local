@@ -66,7 +66,7 @@ Your environment now contains:
 - Berachain Telemetry Viewer running on `http://localhost:16886` (coming soon)
 
 Your chain also now contains:
-- Wrapped Bera (WBERA) contract deployed at `0x0000000000000000000000000000000000000101`
+- Wrapped Bera (WBERA) contract at `0x0000000000000000000000000000000000000101`
 - BerachainOracleQuerier contract at `0x0000000000000000000000000000000000000999`
 
 Stop Local Berachain (and retain chain data):
