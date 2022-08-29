@@ -12,7 +12,7 @@ Local Berachain has the following advantages over a public testnet:
 - Quick to reset for rapid iterations
 - Simple simulations of different scenarios
 - Controllable validator behavior
-- Off-chain Oracle service.
+- No need to install dependencies
 
 ## Prerequisites
 
@@ -52,6 +52,7 @@ sudo apt install docker-compose -y
 
 ```sh
 make start
+make startv # verbose
 ```
 
 Your environment now contains:
@@ -59,8 +60,10 @@ Your environment now contains:
 - Ethereum JSON-RPC websocket RPC running on `ws://localhost:8546`
 - Tendermint GRPC running on `tcp://localhost:26653`
 - Tendermint RPC running on `http://localhost:26657`
-- Berachain Oracle Service running on `tcp://localhost:7171`
-- LCD running on `http://localhost:1317`
+- Cosmos LCD running on `http://localhost:1317`
+- Berachain Oracle Feeder running on `tcp://localhost:7171`
+- Berachain Explorer running on `http://localhost:3000` (coming soon)
+- Berachain Telemetry Viewer running on `http://localhost:16886` (coming soon)
 
 
 Stop Local Berachain (and retain chain data):

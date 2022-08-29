@@ -4,10 +4,10 @@ CURRENT_UID:=$(id -u)
 CURRENT_GID:=$(id -g)
 
 start: build
-	env UID=${CURRENT_UID} GID=${CURRENT_GID} docker-compose up
-
-startd: build
 	env UID=${CURRENT_UID} GID=${CURRENT_GID} docker-compose up -d
+
+startv: build
+	env UID=${CURRENT_UID} GID=${CURRENT_GID} docker-compose up
 	
 stop:
 	docker-compose stop
