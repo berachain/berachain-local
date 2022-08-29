@@ -8,7 +8,7 @@ services:
     image: ghcr.io/berachain/berachain-node:${VERSION}
     user: ":"
     volumes:
-      - ./local:/berachain/.berad
+      - ./:/berachain/.berad
     command: ["start"]
     ports:
       - "26660:26660"
@@ -30,7 +30,7 @@ services:
     environment:
       - PRICE_FEEDER_PASS=${PRICE_FEEDER_PASS}
     volumes:
-      - ./local:/berachain/.berad
+      - ./:/berachain/.berad
     command: ["oracle-feeder", "/berachain/.berad/oracle/config.toml"]
     ports:
       - "7171:7171"

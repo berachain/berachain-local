@@ -11,10 +11,6 @@ write_timeout = "20s"
 base = "USDT"
 threshold = "2"
 
-###############################################################################
-###                                L1 Tokens                                ###
-###############################################################################
-
 [[currency_pairs]]
 base = "ATOM"
 providers = [
@@ -26,6 +22,15 @@ quote = "USD"
 
 [[currency_pairs]]
 base = "AVAX"
+providers = [
+  "kraken",
+  "huobi",
+  "coinbase"
+]
+quote = "USD"
+
+[[currency_pairs]]
+base = "BTC"
 providers = [
   "kraken",
   "huobi",

@@ -435,7 +435,7 @@
     },
     "oracle": {
       "params": {
-        "vote_period": "3",
+        "vote_period": "10",
         "vote_threshold": "0.3333",
         "reward_band": "0.020000000000000000",
         "reward_distribution_window": "14250000",
