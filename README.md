@@ -61,10 +61,13 @@ Your environment now contains:
 - Tendermint GRPC running on `tcp://localhost:26653`
 - Tendermint RPC running on `http://localhost:26657`
 - Cosmos LCD running on `http://localhost:1317`
-- Berachain Oracle Feeder running on `tcp://localhost:7171` with contract at `0x0000000000000000000000000000000000000999`. 
+- Berachain Oracle Feeder running on `tcp://localhost:7171` 
 - Berachain Explorer running on `http://localhost:3000` (coming soon)
 - Berachain Telemetry Viewer running on `http://localhost:16886` (coming soon)
 
+Your chain also now contains:
+- Wrapped Bera (WBERA) contract deployed at `0x0000000000000000000000000000000000000101`
+- BerachainOracleQuerier contract at `0x0000000000000000000000000000000000000999`
 
 Stop Local Berachain (and retain chain data):
 
