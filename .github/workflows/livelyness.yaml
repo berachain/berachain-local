@@ -1,0 +1,26 @@
+name: Livelyness Check
+on: 
+  pull_request:
+  push:
+    branches: main
+
+jobs:
+  check-livelyness:
+    name: Check Livelyness
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: docker-practice/actions-setup-docker@master
+        if: ${{ matrix.os == 'macos-latest' }}
+
+      - name: Bring up berachain
+        run: |
+          make start
+      - name: check
+        run: |
+          ./checkLivelyness.sh 10 10 10 http://localhost
+        working-directory: .github/workflows
