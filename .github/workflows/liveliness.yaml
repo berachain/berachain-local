@@ -1,4 +1,4 @@
-name: Livelyness Check
+name: Liveliness Check
 on: 
   pull_request:
   push:
